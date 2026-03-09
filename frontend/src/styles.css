@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #2563eb;
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #f59e0b;
+}
+
+.status.approved {
+  background-color: #10b981;
+}
+
+.status.rejected {
+  background-color: #ef4444;
+}
+
+.approve {
+  background-color: #10b981;
+  margin-right: 8px;
+}
+
+.reject {
+  background-color: #ef4444;
+}
+
+.message {
+  margin-top: 10px;
+  color: #1f2937;
+}
